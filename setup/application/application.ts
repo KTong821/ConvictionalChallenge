@@ -7,6 +7,7 @@ export interface Application {
   controllers: Controllers;
 }
 
+// wrapper for initializing controllers
 export const setupApplication = (repos: Repos): Application => {
   const useCases = setupUseCases(repos);
   const controllers = setupControllers(useCases);

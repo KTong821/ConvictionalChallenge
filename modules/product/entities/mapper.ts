@@ -2,6 +2,7 @@ import { Product, ProductDTO } from "./product";
 
 // Mapper class
 export class ProductMap {
+    // Maps from domain object to DTO
   public static toDTO(product: Product): ProductDTO {
     const { code, title, vendor, bodyHtml, variants, images } = product;
     return {
@@ -14,6 +15,7 @@ export class ProductMap {
     };
   }
 
+// Maps from mongo to domain
   public static toDomain(productEntity: any): Product {
     const { id, title, body_html, vendor, variants } = productEntity;
     const productResult = Product.create(

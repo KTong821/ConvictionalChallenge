@@ -1,5 +1,6 @@
 export type Result<T, E> = Ok<T, E> | Err<T, E>
 
+// Error handling wrapper
 export class Ok<T, E> {
   public constructor(public readonly value: T) {}
 

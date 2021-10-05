@@ -6,6 +6,7 @@ import { data } from "../../../../setup/database/mongo-data";
 import { Result, BaseError } from "../../../../shared";
 import { Inventory } from "../../../store/entities/inventory";
 
+// Mock mongooose capabilities
 export class MongoProductRepo implements ProductRepo {
   //TODO constructor consuming MongoDB Model as property Project
 

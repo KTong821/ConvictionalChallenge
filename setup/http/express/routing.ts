@@ -3,6 +3,7 @@ import { ProductRouter } from "../../../modules/product/infra/routes/product-rou
 import { StoreRouter } from "../../../modules/store/infra/routes/store-router";
 import { Controllers } from "../../application";
 
+// Router sub-path setup
 export const routerSetup = (controllers: Controllers): express.Router => {
   const endpointRouters = {
     products: ProductRouter.using(

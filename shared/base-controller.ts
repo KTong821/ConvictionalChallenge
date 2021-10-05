@@ -1,5 +1,6 @@
 import express from "express";
 
+// BaseController with common HTTP methods
 export abstract class BaseController {
   public abstract execute<Res extends express.Response>(
     req: express.Request,
